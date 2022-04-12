@@ -1,6 +1,16 @@
 basic.forever(function () {
-    basic.showIcon(IconNames.SmallHeart)
-    basic.pause(25)
-    basic.showIcon(IconNames.Heart)
-    basic.pause(450)
+    if (input.buttonIsPressed(Button.A)) {
+        basic.clearScreen()
+        basic.showString("T=")
+        basic.showNumber(input.temperature())
+        basic.showString("DEGRES")
+    } else {
+        basic.showLeds(`
+            . . # . .
+            . # . . .
+            # # # # #
+            . # . . .
+            . . # . .
+            `)
+    }
 })
