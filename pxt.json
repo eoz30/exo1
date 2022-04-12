@@ -1,5 +1,5 @@
 {
-    "name": "EXO1",
+    "name": "Mesure-de-température",
     "description": "",
     "dependencies": {
         "core": "*",
